@@ -1,0 +1,179 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #233975;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    color: #333333;
+    letter-spacing: 0.5px;
+}
+
+h5 {
+    text-align: center;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #999999;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+a:hover {
+    text-decoration: underline;
+}
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+.split-screen {
+    display: flex;
+    flex-direction: column;
+}
+.left {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,5));
+    background-image: url('./images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.left .copy {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.right .copy {
+    color: black;
+    text-align: center;
+}
+.right .copy p {
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+}
+.right form {
+    width: 328px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+.input-container.password {
+    position: relative;
+}
+.input-container.password i {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+.checkbox-container input:checked~.checkmark {
+    background-color: #3399FF;
+    border: 1px solid #3399FF;
+}
+.checkmark {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked~.checkmark:after{
+    display: block;
+}
+.checkbox-container .checkmark:after{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+.singup-btn {
+    display: block;
+    width: 100%;
+    background: #3399FF;
+    color: #fffaed;
+    font-weight: 400;
+    font-size: 0.75rem;
+    font-family: "lato", sans-serif;;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.singup-btn:hover {
+    background: #0970d6;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}

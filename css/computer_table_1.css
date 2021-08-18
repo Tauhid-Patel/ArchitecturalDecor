@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li,a {
+  font-family: "Poppins";
+  font-weight: 400 ; 
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  margin: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;                                                                                               
+    position: absolute;
+    left: 20%;
+    top: 1px;
+    z-index: 10;
+}
+
+header p {
+    font-family: "HolidayFree";
+    font-size: 20px;
+    position: absolute;
+    left: -33%;
+}
+
+nav {
+    height: 60px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-left: 60px;
+}   
+
+.nav_links li a {
+    transition: all 0.3s ease 0s; 
+    color: black;
+}
+
+.nav_links li a:hover {
+    color: #3399ff;
+}
+
+.grid-container {
+	font-family: poppins;
+    display: grid;
+    grid-template-columns: 45% 52%;
+    grid-gap: 40px;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.grid-parent-1 {
+    outline: 1px solid #000;
+}
+
+.grid-parent-2 {
+	border-radius: 8px;
+	background-color: #FAFAFA;
+  	padding-top: 5%;
+  	padding-left: 40%;
+  	padding-bottom: 70%;
+}
+
+#subgrid1 {
+	background-color: #FBFBFB;
+	/*border: 1px solid;*/
+	height: 39vh;
+	width: 23%;
+	position: absolute;
+	left: 50%;
+	top: 18%;
+}
+
+#subgrid1 h3 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-top: 5px;
+    line-height: 1.7em;
+}
+
+#subgrid2 {
+	background-color: #FBFBFB;
+	/*border: 1px solid;*/
+	height: 39vh;
+	width: 20%;
+	position: absolute;
+	left: 74.5%;
+	top: 18%;
+}
+
+#subgrid3 {
+	background-color: #FBFBFB;
+	/*border: 1px solid;*/
+	height: 30vh;
+	width: 20%;
+	position: absolute;
+	left: 40%;
+	margin: 10%;
+	top: 39%;
+}
+
+#subgrid4 {
+	background-color: #FBFBFB;
+	/*border: 1px solid;*/
+	height: 30vh;
+	width: 20%;
+	position: absolute;
+	left: 64.5%;
+	margin: 10%;
+	top: 39%;
+}
+
+table {
+	border-spacing: 38px 10px;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+/*Computer Table*/
+.grid-parent-1 h3{
+	font-size: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+/*Elegant wood and spacious*/
+.grid-parent-1 p{
+	font-weight: 300;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+/*Computer Model Image*/
+.grid-parent-1 img {
+    height: 60vh;
+    position: relative;
+    left: -65px;
+}
+
+.grid-parent-1 h5 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 25%;
+}
+
+/*Description*/
+#subgrid2 h3 {
+	font-size: 15px;
+    padding-left: 30%;
+    padding-top: 5px;
+}
+
+#subgrid1 p {
+	line-height: 1.4;
+	font-size: 13px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#subgrid2 table {
+    padding-left: 1px;
+    font-size: 11px;
+    line-height: 190%;
+}
+
+#subgrid2 img {
+	height: 2vh;
+	width: 2vh;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.button {
+	background-color: #3399ff;
+    color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 27px;
+	width: 80%;
+	height: 40px;
+	font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: 62%;
+}
+
+.button:hover {
+  	background-color: #4d4dff;
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Architectural Decor</title>
+</head>
+<body>
+    <header>
+         <p>AD</p>
+        <nav>
+               <ul class="nav_links">
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="./html/products.html">PRODUCTS</a></li>
+                   <li><a href="#">CONTACT</a></li>
+               </ul>
+               <div class="center">
+                <input type="checkbox" id="show">
+                <label for="show" class="show-btn">Login</label>
+                <div class="container">
+                  <label for="show" class="close-btn fas fa-times" title="close"></label>
+                  <img class="clip_circle" src="./images/img_1.png" alt="img">
+                  <form action="">
+                    <div class="data">
+                      <label>Email</label>
+                      <input type="text" name="useremail">
+                    </div>
+                      <div class="data">
+                      <label>Password</label>
+                      <input type="password" name="userpass" class="password1">
+                    </div>
+                      <div class="data">
+                      <label>Re-Enter Password</label>
+                      <input type="password" name="confirmpass" class="password2">
+                    </div>
+                      <div class="forgot-pass">
+                          <a href="#">Forgot Password?</a></div>
+                      <div class="btn">
+                          <div class="inner">
+                      </div>
+                          <button type="submit" class="button">login</button>
+                      </div>
+                      <div class="signup-link">Not a member? <a href="./html/registration.html">Signup now</a></div>
+                  </form>
+                 </div>
+              </div>
+              <script>
+                  document.querySelector('.button').onclick = function()
+                  {
+                  var password1 = document.querySelector('.password1').value,
+                      password2 = document.querySelector('.password2').value;
+          
+                      if(password1 == ""){
+                        alert("Field cannot be empty");
+                      }
+                      else if (password1 != password2){
+                        alert("Password Mismatch");
+                        return false
+                      }
+                      else if (password1 == password2){
+                        alert("Login Successful");
+                      }
+                      return true;
+                  }
+              </script>   
+        </nav>
+    </header>
+    <div class="first">
+        <img src="./images/people.jpg" alt="people">
+    </div>
+
+    <div class="first_box">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3399ff" d="M36.8,-46C50.1,-41,65,-33.5,73.4,-20.8C81.7,-8,83.6,9.9,79.4,26.7C75.2,43.6,64.9,59.4,50.7,69.1C36.4,78.7,18.2,82.2,2.3,79.1C-13.7,75.9,-27.3,66.2,-42.8,56.9C-58.3,47.7,-75.7,39,-81.8,25.4C-87.8,11.8,-82.6,-6.7,-72.7,-19.4C-62.8,-32.2,-48.3,-39.4,-35.4,-44.5C-22.5,-49.7,-11.3,-52.9,0.2,-53.2C11.7,-53.6,23.5,-51,36.8,-46Z" transform="translate(100 100)" />
+          </svg>
+        <h1>ELEGANT DESIGN</h1>
+        <h5>Design isn't something that exists in isolation</h5>
+    </div>
+    
+    <div class="second">  
+        <img src="./images/virtual.png" alt="virtual">
+    </div> 
+
+    <div class="second_box">
+        <h1>VIRTUAL FURNITURE</h1>
+        <p>Exterior façade in architecture deals with the outer aesthetics<br>
+            of the building in relation with  the surroundings and climate</p>
+        <img src="./images/workplace.png" alt="workplace">
+        <button>Get Started</button>    
+    </div>
+
+    <div class="third">
+        <img src="./images/neural.png" alt="neural">
+        <h1>MACHINE LEARNING</h1>
+        <p>Collaborative Filtering or recommender systems encompass a class of techniques<br>
+            and algorithms which are able to suggest “relevant” items to users. Ideally,<br>
+            the suggested items are as relevant to the user as possible,<br> 
+            so that the user can engage with those items</p> 
+    </div>
+
+    <div class="line"></div>
+    
+    <div class="forth">
+        <img src="./images/model.png" alt="model">
+        <h1>3D MODELLING</h1>
+        <p>Helps to make your design more realistic and the clients can take a<br>
+            virtual tour of their construction projects. You can also quickly check<br>
+            whether the product is feasible or check how small changes<br> 
+            to the design would look like</p>
+    </div>
+
+    <div class="cards">
+        
+        <div class="first_card">
+            <img src="./images/jigsaw.png" alt="images">
+            <p>Providing architects & designers<br>
+               optimum product solutions out<br> 
+                there in order to best realize their<br> 
+                next project or design</p>
+        </div>            
+
+       <div class="second_card">
+            <img src="./images/network.png" alt="network">
+            <p>finding, selecting and connecting with product<br> 
+               manufacturers easier, faster and more effective<br>
+               for design professionals</p>
+        </div>
+        
+         <div class="third_card">
+            <img src="./images/perspective.png" alt="">
+            <p>Moreover the 3D model speeds up the design process<br>
+               and enables architects and designers play around<br>
+               with different ideas and identify potential design problems</p>
+        </div> 
+    </div>
+
+    <div class="tauhid">
+        <img class="clip_circle" src="./images/img_1.png" alt="img">
+        <p>Tauhid Patel</p>
+        <h5>Frontend Developer</h5>
+        <h6>This project will make the process of finding, selecting<br>
+            and connecting with product manufacturers easier, faster<br>
+            and more effective for design professionals.</h6>
+    </div>
+
+    <div class="divesh">
+        <img class="clip_circle" src="./images/img_3.jpg" alt="img">
+        <p>Divesh Patil</p>
+        <h5>Backend</h5>
+        <h6>Suggesting and recommending models and of similar<br>
+            interests and aesthetic has also been made convenient<br>
+            with help of different ML concepts.</h6>
+    </div>
+    
+    <div class="bottom_card">
+       <img src="./images/arch_1.jpg" alt="arch">
+       <p>REALITY IS A QUESTION OF PERSPECTIVE</p>
+    </div>
+
+    <div class="footer">
+        <p>In case of any concern</p>
+        <p><a href="#">Contact Us</a></p>
+    </div>
+
+</body>
+</html>
